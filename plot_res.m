@@ -1,5 +1,5 @@
 
-clc; clearvars ;
+clc; clearvars ; close all;
 format long
 NC = 400; 
 data=importdata('results.dat');
@@ -16,7 +16,7 @@ for i=1:length(data(:,1))/n;
     %xlabel('x'),ylabel('Ion Average Velocity')
     title(i)
     
-    pause(1)    
+    pause(0.1)    
 end
 
 
