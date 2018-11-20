@@ -11,12 +11,20 @@ for i=1:length(data(:,1))/n;
     nde=data((i-1)*n+1:i*n,3);    
     phi=data((i-1)*n+1:i*n,7);
     
-    figure(1)
-    plot(x,ndi,'linewidth',2),grid on
-    %xlabel('x'),ylabel('Ion Average Velocity')
-    title(i)
-    
-    pause(0.1)    
+%     figure(1)
+%     plot(x,ndi,'linewidth',2),grid on
+%     %xlabel('x'),ylabel('Ion Average Velocity')
+%     title(i)
+%     
+%     pause(0.1)    
 end
 
+figure(1)
+plot(x,ndi,'linewidth',2),grid on
+xlabel('x'),ylabel('Ion Density')
+print('Ion_Density','-dpng')
 
+figure(2)
+plot(x,phi,'linewidth',2),grid on
+xlabel('x'),ylabel('Potential')
+print('Potential','-dpng')
