@@ -52,7 +52,7 @@ const double PLASMA_DEN = 1E16; // Plasma Density
 const double DX = 1E-4;         // Cell Spacing 
 const double DT = 5E-11;		// Time steps 
 const double ELECTRON_TEMP = 2; // electron temperature in eV
-const double ION_TEMP = 0.1;  // ion temperature in eV
+const double ION_TEMP = 0.01;  // ion temperature in eV
 
 const int NUM_IONS = 30000;      // Number of simulation ions
 const int NUM_ELECTRONS = 80000; // Number of simulation electrons
